@@ -1,0 +1,1 @@
+SELECT CategoryName, count(*) FROM Categories as a, Products as b where a.CategoryID = b.CategoryID GROUP BY b.CategoryID

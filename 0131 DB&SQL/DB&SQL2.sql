@@ -1,0 +1,1 @@
+SELECT CustomerName FROM Customers as c, Orders as o, OrderDetails as d, Products as p where c.CustomerID = o.CustomerID and o.OrderID = d.OrderID and d.ProductID = p.ProductID and d.quantity * p.price >= 10000
